@@ -38,6 +38,31 @@ function vaciarCarritoConTotal() {
     ];
 
     // Completa aquí código de escenario 1
+    function vaciarCarritoConTotal() {
+  
+        let total = 0;
+        const carrito = [
+            {
+                articulo: "leche",
+                precio: 18.7,
+            },
+            {
+                articulo: "pan",
+                precio: 44.9,
+            },
+            {
+                articulo: "manzanas",
+                precio: 33.5,
+            },
+        ];
+        // Completa aquí código de escenario 1.
+       for (let i = 0; i < carrito.length; i++) {
+        total += carrito[i].precio;
+    }
+      carrito.splice(0, carrito.length);
+      console.log(total);
+    }
+    vaciarCarritoConTotal();
 }
 
 /*
